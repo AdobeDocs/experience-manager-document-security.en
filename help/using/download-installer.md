@@ -25,6 +25,6 @@ Using Document Security Extension for Microsoft&reg; Office software, you can ma
 
 ## Download installer {#download-installer}
 
-| Microsoft&reg; Office 32-bit | [Download EXE](https://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice.exe) | [Download MSI](https://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice.zip) |
+| Microsoft&reg; Office 32-bit | [Download EXE](https://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice.exe) (Sha1: df03bbdd9722c63a46b245c303cdb335ee2d0fce) | [Download MSI](https://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice.zip) (Sha1: e70661f72ba640c37911c6d17d520ceaf84c2122) |
 |---|---|---|
-| Microsoft&reg; Office 64-bit | [Download EXE](https://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice64.exe) | [Download MSI](https://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice64.zip) |
+| Microsoft&reg; Office 64-bit | [Download EXE](https://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice64.exe) (Sha1: f4f0327f3cb5dc4c4a5c3da191062280870fc176) | [Download MSI](https://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice64.zip) (Sha1: 73f408f860143008915ee86b13edd0e76789b4fc) |
