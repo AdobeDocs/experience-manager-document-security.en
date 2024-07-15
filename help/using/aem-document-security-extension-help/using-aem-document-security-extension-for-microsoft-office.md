@@ -12,7 +12,7 @@ discoiquuid: df6ca960-ccfb-411a-b61d-d52bce0725a7
 >
 >[Introduction to AEM Document Security Extension for Microsoft Office](../document-security-extension-microsoft-office.md) {#introduction-to-aem-document-security-extension-for-microsoft-office}
 >
->Using document Security Extension for Microsoft Office, you can apply predefined confidentiality settings to your Microsoft Office files.
+>Using the Document Security Extension for Microsoft Office, you can apply predefined confidentiality settings to your Microsoft Office files.
 
 >[!NOTE]
 >
