@@ -97,7 +97,7 @@ You can use default AEM Forms URL for extended authentication. The default landi
 Perform the following steps to enable extended authentication with the default Adobe Landing URL:
 
 1. Open AEM Forms Admin UI.
-1. Navigate to Services &gt; Document Security &gt; Configuration &gt; Server Configuration.
+1. Navigate to Services > Document Security > Configuration > Server Configuration.
 1. Enable the Allow Extended Authentication option.
 1. Specify the default URL Extended Authentication Landing URL. The default URL is http://localhost:8080/edc/extendedauthentication/welcome.jsp.
 
@@ -105,7 +105,7 @@ Perform the following steps to enable extended authentication with the default A
 
    >[!NOTE]
    >
-   >Use a fully qualified hostname in the URL. It is recommended to use HTTPS protocol.
+   >Use a fully qualified hostname in the URL. Adobe recommends that you use HTTPS protocol.
 
    Now, AEM Forms document security is configured to use extended authentication with default AEM Forms landing URL.
 
@@ -124,9 +124,9 @@ To enable extended authentication with a custom landing URL:
 
 1. Deploy the custom authentication war file to AEM Forms Server.
 1. Open AEM Forms Admin UI.
-1. Navigate to Services &gt; Document Security &gt; Configuration &gt; Server Configuration.
+1. Navigate to Services > Document Security > Configuration > Server Configuration.
 1. Enable the Allow Extended Authentication option and specify custom Extended Authentication Landing URL.
-1. Add the following entries to config.xml file under the SSO node after entry *&lt;node name="AllowedUrls"&gt;*:
+1. Add the following entries to config.xml file under the SSO node after entry *&lt;node name="AllowedUrls">*:
 
    >[!NOTE]
    >
@@ -176,7 +176,7 @@ After you register and activate your account, you can use policy-protected files
 
 >[!NOTE]
 >
->If you receive a policy-protected file and do not have a Document Security account, or if you receive an invitation to register, contact the person who sent you the file for assistance.
+>If you receive a policy-protected file and do not have a Document Security account, contact the person who sent you the file for assistance. Similarly, if you receive an invitation to register, reach out to the sender for help.
 
 If you receive an email registration invitation from Document Security, you can register by using the URL in the email to open the online registration page. After you register, you will receive a second notice about activating your account.
 
@@ -213,31 +213,31 @@ Some of the policy settings available for creating policies in the Document Secu
  </thead>
  <tbody>
   <tr>
-   <td><p>Print &gt; Not Allowed</p></td>
+   <td><p>Print > Not Allowed</p></td>
    <td><p>Printing the file is not allowed.</p></td>
   </tr>
   <tr>
-   <td><p>Print &gt; Allowed</p></td>
+   <td><p>Print > Allowed</p></td>
    <td><p>Printing the file is allowed.</p><p><strong>Note</strong>: <i>If a policy gives the Copy permission but not the Print permission, content copied to another file can be printed.</i></p></td>
   </tr>
   <tr>
-   <td><p>Print &gt; Low Res. Only</p></td>
+   <td><p>Print > Low Res. Only</p></td>
    <td><p>Not applicable.</p></td>
   </tr>
   <tr>
-   <td><p>Change &gt; Any</p></td>
+   <td><p>Change > Any</p></td>
    <td><p>The file can be changed.</p><p>When this permission is not given, you cannot modify protected Word and Excel files. You can modify PowerPoint files but cannot save the changes or view slide shows for modified files.</p></td>
   </tr>
   <tr>
-   <td><p>Change &gt; Not Allowed</p></td>
+   <td><p>Change > Not Allowed</p></td>
    <td><p>Users cannot modify protected files.</p></td>
   </tr>
   <tr>
-   <td><p>Change &gt; Alter Pages</p></td>
+   <td><p>Change > Alter Pages</p></td>
    <td><p>Not applicable.</p><p>Includes inserting, deleting, and rotating pages.</p></td>
   </tr>
   <tr>
-   <td><p>Change &gt; Fill &amp; Sign</p></td>
+   <td><p>Change > Fill &amp; Sign</p></td>
    <td><p>Not applicable.</p></td>
   </tr>
   <tr>
@@ -321,17 +321,17 @@ For more information about creating and managing policies, see [Document Securit
 
 ### Apply policies {#applying-policies}
 
-You can apply any available policy to a file, including policies that you created and those that are part of policy sets that you have access to. Before applying a policy, you must save the file.
+You can apply any available policy to a file, including policies that you created and policies that are part of policy sets that you have access to. Before applying a policy, you must save the file.
 
-After you apply a policy, it is added to the Recently Used list on the AEM Document Security menu to make it easier for you to apply your most frequently used policies. If you use more than one instance of Document Security, the Recently Used list displays the policies only for the server you are currently connected to or for your default server if you have not yet logged in to an instance of Document Security.
+After you apply a policy, it is added to the Recently Used list on the AEM Document Security menu to make it easier for you to apply your most frequently used policies. The Recently Used list shows policies only for the server that you are connected to or your default server if you have not logged in to another Document Security instance.
 
 >[!NOTE]
 >
->You can apply policies only to Word document files (.doc, also.docx and .docm in Microsoft&reg; Office 2010 and 2013), Excel workbook files (.xls, also .xlsx, and .xlsm in Microsoft&reg; Office 2010 and 2013), and PowerPoint presentation files (.ppt, also .pptx, and .pptm in Microsoft&reg; Office 2010 and 2013). You cannot apply policies to Word template files (.dot), Excel template files (.xlt), and PowerPoint design template files (.pot).
+>Policies can be applied only to Word (.doc, .docx, .docm), Excel (.xls, .xlsx, .xlsm), and PowerPoint (.ppt, .pptx, .pptm) files in Microsoft&reg; Office 2010 and 2013. You cannot apply policies to Word template files (.dot), Excel template files (.xlt), and PowerPoint design template files (.pot).
 
 #### Apply a policy {#apply-a-policy}
 
-1. In Document Security Extension for Microsoft&reg; Office 2010 and 2013 on the **Document Security** tab, select **Secure &gt; Choose Policy**.
+1. In Document Security Extension for Microsoft&reg; Office 2010 and 2013 on the **Document Security** tab, select **Secure > Choose Policy**.
 
    If you chose user name and password as the authentication method on the server and have not yet provided login information for Document Security, a dialog box prompts for your user name and password.
 
@@ -340,38 +340,38 @@ After you apply a policy, it is added to the Recently Used list on the AEM Docum
 
 #### Apply a recently-used policy {#apply-a-recently-used-policy}
 
-1. In Document Security Extension for Microsoft&reg; Office 2010 and 2013, on the **Document Security** tab, select **Secure &gt; ***[Policy Name]*.
+1. In Document Security Extension for Microsoft&reg; Office 2010 and 2013, on the **Document Security** tab, select **Secure** > *[Policy Name]*.
 1. Save the file.
 
 ## Work with the Policy-Protected Files {#usingaemdocumentsecurityextensionpolicyprotectedfiles}
 
-Policy-protected files contain intellectual property that is owned by the file publisher and protected by Document Security.
+The file publisher owns the intellectual property in policy-protected files, which Document Security protects.
 
-You can use policy-protected files whether you are internal or external to the file publisher's organization. To open policy-protected files, you must be recognized by Document Security, either through inclusion in a linked LDAP or Active Directory list, being added as a local user for LiveCycle or AEM forms on JEE, or by registering with Document Security after being invited as a user.
+You can use policy-protected files whether you are internal or external to the file publisher's organization. .Document Security must recognize you to open policy-protected files. It must do so through LDAP/Active Directory. Or, it must do so as a local user for LiveCycle/AEM forms on JEE, or by registering after an invitation.
 
-If you receive a policy-protected file and do not have a Document Security account, or if you receive an invitation to register, contact the person who sent you the file for assistance.
+If you receive a policy-protected file and don't have a Document Security account, contact the sender for assistance. Similarly, if you receive an invitation to register, reach out to the sender for help.
 
 ### Working with policy-protected files in Microsoft&reg; Office {#working-with-policy-protected-files-in-microsoft-office}
 
 Document Security Extension for Microsoft&reg; Office restricts certain Word, Excel, and PowerPoint functionality to protect the file publisher's intellectual property. If you do not have permission to change the file, you cannot save modifications to it.
 
-If you are working with a policy-protected file, some product features may not be available or may not work as usual. If you also have an unprotected file open, most features are enabled for the unprotected file, except those that allow you to import or copy content from a policy-protected file for which you do not have copy or export permissions.
+If you are working with a policy-protected file, some product features may not be available or may not work as usual. If an unprotected file is open, most features are enabled, except those features that let you import or copy content from a policy-protected file without copy or export permissions.
 
 >[!NOTE]
 >
->When using Document Security Extension-supported Office applications, it is recommended that you disable the Windows DEP setting. Also, to ensure that Office applications start smoothly on a machine that has Document Security Extension installed and McAfee VirusScan with On-Access Scan enabled, disable the Buffer Overflow Protection option in the McAfee VirusScan Console.
+>When using Document Security Extension-supported Office applications, it is recommended that you disable the Windows DEP setting. To ensure smooth startup of Office applications on a machine with Document Security Extension and McAfee VirusScan with On-Access Scan enabled, disable the Buffer Overflow Protection option in the McAfee VirusScan Console. This adjustment helps prevent potential conflicts.
 
 If a feature is not available, the command name on the menu and the related toolbar button are unavailable. In Document Security Extension for Microsoft&reg; Office, when you hover the mouse pointer over the command or button, a tool tip indicates that the command is made unavailable by Document Security.
 
 ### Opening policy-protected files {#opening-policy-protected-files}
 
-You can open policy-protected files by using the same methods that you use to open any other file. If you are not already logged in to Document Security, you are prompted to do so unless you are not connected to the Internet and you can open the file offline. If you cancel the login process, access is denied.
+You can open policy-protected files by using the same methods that you use to open any other file. If you are not already logged in to Document Security, you are prompted to do so. That is, if you are not connected to the Internet and you can open the file offline. If you cancel the login process, access is denied.
 
 If you do not have permission to open the file, you are informed that access is denied. If the file access privileges were revoked, you may also be directed to an updated version of the file if one is available. For additional assistance if you cannot open a policy-protected file, contact the file publisher.
 
 When a protected file is open, text in the title bar that follows the file name states that the file is protected by AEM Document Security.
 
-When opening a protected document in Document Security Extension for Microsoft&reg; Office from SharePoint Server, ensure the Microsoft&reg; Office program associated with the file type, such as Microsoft&reg; Word, Microsoft&reg; Excel, or Microsoft&reg; PowerPoint, is open. If you try to open the file without opening the associated application, the document may not open and an error message indicating that you must install the applicable plug-in is displayed. In addition to opening the required application, it is recommended that you clear the cache folder before opening a protected document in Document Security Extension for Microsoft&reg; Office from SharePoint Server. Also, when you open a protected document from SharePoint Server, all permissions on the document are disabled, regardless of the policy that was applied.
+When opening a protected document in Document Security Extension for Microsoft&reg; Office from SharePoint Server, ensure the Office program associated with the file type, such as Word, Excel, or PowerPoint, is open. If you try to open the file without opening the associated application, the document may not open and an error message indicating that you must install the applicable plug-in is displayed. In addition to opening the required application, Adobe recommends that you clear the cache folder. Do so before opening a protected document in Document Security Extension for Office from SharePoint Server. Also, when you open a protected document from SharePoint Server, all permissions on the document are disabled, regardless of the policy that was applied.
 
 Depending on the authentication method implemented on Document Security, you may be prompted to choose the authentication method when you open a protected document. If Document Security supports more than one authentication method, the authentication options are presented to you. For example, if Document Security server provides both username/password and certificate authentication, you can choose the appropriate authentication method. If Certificate-based authentication enabled, you are prompted to use the certificate that you have received and installed.
 
@@ -391,7 +391,7 @@ If you are permitted, you can remove policy protection from files that you have 
 
 ### Viewing security settings {#viewing-security-settings}
 
-You can view the permissions that you have for the current file for printing, copying from, changing, and accessing offline, along with the file validity period.
+You can view the permissions that you have for the current file for printing. You can also view permissions for the current file when copying from, changing, and accessing offline, along with the file validity period.
 
 In Document Security Extension for Microsoft&reg; Office 2010, the Security Status group on the Document Security tab displays your permissions for the file.
 
@@ -403,15 +403,15 @@ Do the following:
 
 If your Administrator has enabled the Auto-apply policy functionality, any document you create or edit is automatically protected when you save the document.
 
-If Auto-apply policy is enabled, Document Security Extension for Microsoft&reg; Office prompts you to log in to the Document Security server. You must provide your Username and Password to be authenticated by the server. If you have provided the correct log-in credentials, the document is saved and protected.
+If Auto-apply policy is enabled, Document Security Extension for Microsoft&reg; Office prompts you to log in to the Document Security server. Enter your Username and Password so the server can authenticate you. If you have provided the correct log-in credentials, the document is saved and protected.
 
 >[!NOTE]
 >
->If you cannot log in to Document Security, the document may or may not be saved. This depends on how your Administrator has configured the Auto-apply policy. Check with the Administrator about how documents are handled in this situation.
+>If you cannot log in to Document Security, the document may or may not be saved. This situation depends on how your Administrator has configured the Auto-apply policy. Check with the Administrator about how documents are handled in this situation.
 
 ### Synchronizing for offline access {#synchronizing-for-offline-access}
 
-Policies can allow you to open files while you are offline and not connected to Document Security. You must have previously logged in to Document Security to establish your credentials with the server before you can work offline. If you plan to work with files offline, it is recommended that you synchronize with Document Security before you disconnect to ensure that the policy settings for your files are up to date with the server. It is recommended that you also open the file online once before you open it offline. If you do not open the file once online or synchronize with the server, you may still be able to use policy-protected files while offline. However, the offline lease period must not have expired, and the policy settings for the file must not have changed since you last synchronized manually or automatically with the server.
+Policies can allow you to open files while you are offline and not connected to Document Security. You must have previously logged in to Document Security to establish your credentials with the server before you can work offline. If you plan to work with files offline, Adobe recommends that you synchronize with Document Security. Do so before you disconnect to ensure that the policy settings for your files are up to date with the server. Adobe also recommends that you open the file online once before you open it offline. If you do not open the file once online or synchronize with the server, you may still be able to use policy-protected files while offline. However, the offline lease period must not have expired, and the policy settings for the file must not have changed since you last synchronized manually or automatically with the server.
 
 Do the following:
 
@@ -423,9 +423,9 @@ Do the following:
 
 Document Security Extension for Microsoft&reg; Office supports the inclusion of dynamic text-based watermarks in policy-protected documents. A dynamic watermark can include information that may change, such as the date, time, user name, or name of the policy. If a user prints a policy-protected file, and that file contains a dynamic watermark and the permission to print, the watermark appears in the output.
 
-Document Security Extension does not support rich watermark features such as PDF-based watermarks, multiple elements in a watermark, text formatting options, and page range.
+Document Security Extension does not support rich watermark features. Rich watermark features include such things as PDF-based watermarks, multiple elements in a watermark, and text formatting options. They also include page range.
 
-You create a dynamic watermark using the Document Security web pages. For more information about creating and including dynamic watermarks in a policy protected document, see [Document Security End User Help](https://www.adobe.com/go/learn_lc_euRightsMgmt_11).
+You create a dynamic watermark using the Document Security web pages. For more information, see [Document Security End User Help](https://www.adobe.com/go/learn_lc_euRightsMgmt_11).
 
 Document Security Extension for Microsoft&reg; Office provides support for these watermark features:
 
@@ -447,7 +447,7 @@ Document Security Extension for Microsoft&reg; Office provides support for these
   </tr>
   <tr>
    <td><p>Use as background</p></td>
-   <td><p>The display behavior of a dynamic watermark is the same regardless of whether you select Use As Background.</p><p>For Word 2010 and 2013 dynamic watermark appears only in Print Layout and Print Preview view. </p><p>For Excel 2010 and 2013 also , it appears in the Print Preview and Page Layout views.</p></td>
+   <td><p>The display behavior of a dynamic watermark is the same regardless of whether you select Use As Background.</p><p>For Word 2010 and 2013, dynamic watermark appears only in Print Layout and Print Preview view. </p><p>For Excel 2010 and 2013 also , it appears in the Print Preview and Page Layout views.</p></td>
   </tr>
   <tr>
    <td><p>Vertical position</p></td>
@@ -486,13 +486,13 @@ To change the settings for a policy, use the Document Security web pages.
 
 1. Do the following:
 
-    * In Document Security Extension for Microsoft&reg; Office 2010 or 2013, on the **Document Security** tab, select **Secure &gt; Change Security**.
+    * In Document Security Extension for Microsoft&reg; Office 2010 or 2013, on the **Document Security** tab, select **Secure > Change Security**.
 
 1. Select a policy from the list and click **Apply**.
 
 ### Revoking file access privileges {#revoking-file-access-privileges}
 
-You can revoke the ability to open files that you protected. When you revoke access privileges for a file, you can also specify the message that appears to anyone who tries to open the file, and the URL to an updated version of the file if you are replacing it with a revised copy.
+You can revoke the ability to open files that you protected. When revoking file access, you can specify a message when users attempt to open it and provide a URL to an updated version if replacing it with a revised copy.
 
 1. Do the following:
 
@@ -510,7 +510,7 @@ Access privileges can be reinstated through the Document Security web pages.
 
 Document Security can save audit history for policy-protected files so that you can audit the actions that users perform on your files.
 
-Audited events for Word, Excel, and PowerPoint files include these:
+Audited events for Word, Excel, and PowerPoint files include the following:
 
 **Secure a New Document** Policy applied to a file
 
@@ -563,53 +563,53 @@ If a policy-protected file that does not allow the user to make changes to it is
 
 Opening a policy-protected file in Word makes the saving of automatic file-recovery information unavailable until you close and restart Word. In addition, the features listed below are restricted in the described situations:
 
-**File &gt; New &gt; New From Existing** Available but files created using this command while any policy-protected file is open cannot be saved. Content in the new file cannot be copied to another file.
+**File > New > New From Existing** Available but files created using this command while any policy-protected file is open cannot be saved. Content in the new file cannot be copied to another file.
 
-**File &gt; Save** Restricted by the Change permission.
+**File > Save** Restricted by the Change permission.
 
-**File &gt; Save As** All options restricted by the Change permission.
+**File > Save As** All options restricted by the Change permission.
 
-**File &gt; Print** All options restricted by the Printing permission. Unavailable unless the policy allows High Resolution printing.
+**File > Print** All options restricted by the Printing permission. Unavailable unless the policy allows High Resolution printing.
 
-**File &gt; Save &amp; Send** All options unavailable during a protected session.
+**File > Save &amp; Send** All options unavailable during a protected session.
 
-**File &gt; Info &gt; Protect Document &gt; Encrypt with&#xA;Password, Add Digital Signature, Mark as Final, Restrict Permission&#xA;by People** Unavailable during a protected session.
+**File > Info > Protect Document > Encrypt with&#xA;Password, Add Digital Signature, Mark as Final, Restrict Permission&#xA;by People** Unavailable during a protected session.
 
-**File &gt; Workflows** Unavailable during a protected session.
+**File > Workflows** Unavailable during a protected session.
 
 ***note**: The ability to start a workflow from the 2010 Microsoft&reg; Office system versions of Word, Excel, and PowerPoint is available only in the Office Professional Plus 2010, Office Enterprise 2010, and Office Ultimate 2010 suites, as well as in the stand-alone 2010 Office release versions of these programs.*
 
-**Blog Post &gt; Publish** Unavailable during a protected session.
+**Blog Post > Publish** Unavailable during a protected session.
 
-**File &gt; Server &gt; File Server Tasks Menu** Unavailable during a protected session.
+**File > Server > File Server Tasks Menu** Unavailable during a protected session.
 
-**Home &gt; Clipboard &gt; Copy** Restricted by the Copy permission. If copying is not allowed, copied content cannot be pasted into any other file or to the Office Clipboard. Content can be copied within the protected file if the user has the change permission.
+**Home > Clipboard > Copy** Restricted by the Copy permission. If copying is not allowed, copied content cannot be pasted into any other file or to the Office Clipboard. Content can be copied within the protected file if the user has the change permission.
 
-**Home &gt; Clipboard &gt; Paste** Restricted by the Change permission.
+**Home > Clipboard > Paste** Restricted by the Change permission.
 
-**Home &gt; Clipboard &gt; Paste Special** Restricted by the Change permission.
+**Home > Clipboard > Paste Special** Restricted by the Change permission.
 
-**Insert &gt; Text &gt; Object** Unavailable during a protected session. Policy-protected files cannot be inserted at any time.
+**Insert > Text > Object** Unavailable during a protected session. Policy-protected files cannot be inserted at any time.
 
 **Mailings** Most options on this tab are unavailable during a protected session.
 
-**Review &gt; Proofing &gt; Research** Restricted by the Copy permission. Unavailable if copying is not allowed.
+**Review > Proofing > Research** Restricted by the Copy permission. Unavailable if copying is not allowed.
 
-**Review &gt; Proofing &gt; Thesaurus** Restricted by the Copy permission. Unavailable if copying is not allowed.
+**Review > Proofing > Thesaurus** Restricted by the Copy permission. Unavailable if copying is not allowed.
 
-**Review &gt; Language &gt; Translate &gt; Translate&#xA;Document** Enabled with the Copy permission.
+**Review > Language > Translate > Translate&#xA;Document** Enabled with the Copy permission.
 
-**Review &gt; Language &gt; Translate &gt; Translate&#xA;Selected Text** Enabled with the Copy permission.
+**Review > Language > Translate > Translate&#xA;Selected Text** Enabled with the Copy permission.
 
-**Review &gt; Language &gt; Translate &gt; Mini Translator** Enabled with the Copy permission.
+**Review > Language > Translate > Mini Translator** Enabled with the Copy permission.
 
-**Review &gt; Compare &gt; Compare** Unavailable during a protected session. Policy-protected files cannot be compared at any time.
+**Review > Compare > Compare** Unavailable during a protected session. Policy-protected files cannot be compared at any time.
 
-**Review &gt; Protect &gt; Block Authors** Unavailable during a protected session.
+**Review > Protect > Block Authors** Unavailable during a protected session.
 
-**Review &gt; Protect &gt; Restrict Editing** Unavailable during a protected session.
+**Review > Protect > Restrict Editing** Unavailable during a protected session.
 
-**View &gt; Macros** Some macros are restricted by the Copy permission and are unavailable unless copying is allowed.
+**View > Macros** Some macros are restricted by the Copy permission and are unavailable unless copying is allowed.
 
 **Add-ins** Cannot be added or removed during a protected session.
 
@@ -623,89 +623,89 @@ Opening a policy-protected file in Word makes the saving of automatic file-recov
 
 **Document Panel** Unavailable during a protected session.
 
-**Developer &gt; Document Template** Unavailable during a protected session. To can access this command, select File > Options > Customize > Developer Tab > Templates > Document Template.
+**Developer > Document Template** Unavailable during a protected session. To can access this command, select File > Options > Customize > Developer Tab > Templates > Document Template.
 
-**Outlining &gt; Master Document &gt; Create Subdocument,&#xA;Insert Subdocument** Unavailable during a protected session.
+**Outlining > Master Document > Create Subdocument,&#xA;Insert Subdocument** Unavailable during a protected session.
 
 #### Excel 2010 and Excel 2013 restrictions {#excel-2010-and-excel-2013-restrictions}
 
 The features listed below are restricted in the described situations:
 
-**File &gt; New &gt; New From Existing** Available, but files created using this command during a protected session cannot be saved. Content in the new file cannot be copied to another file.
+**File > New > New From Existing** Available, but files created using this command during a protected session cannot be saved. Content in the new file cannot be copied to another file.
 
-**File &gt; Save, Save As** Restricted by the Change permission.
+**File > Save, Save As** Restricted by the Change permission.
 
-**File &gt; Save As &gt; PDF** Unavailable during a protected session.
+**File > Save As > PDF** Unavailable during a protected session.
 
-**File &gt; Print** Restricted by the Printing permission. Unavailable unless the policy allows High Resolution printing.
+**File > Print** Restricted by the Printing permission. Unavailable unless the policy allows High Resolution printing.
 
-**File &gt; Info &gt; Protect Document** Unavailable during a protected session.
+**File > Info > Protect Document** Unavailable during a protected session.
 
-**File &gt; Info &gt; Protect Workbook** Unavailable during a protected session.
+**File > Info > Protect Workbook** Unavailable during a protected session.
 
-**File &gt; Save &amp; Send** Unavailable during a protected session.
+**File > Save &amp; Send** Unavailable during a protected session.
 
-**File &gt; Options &gt; Add-ins** Cannot be added or removed during a protected session.
+**File > Options > Add-ins** Cannot be added or removed during a protected session.
 
-**File &gt; Workflows** Unavailable during a protected session.
+**File > Workflows** Unavailable during a protected session.
 
 ***note**: The ability to start a workflow from the 2010 Microsoft&reg; Office system versions of Word, Excel, and PowerPoint is available only in the Office Professional Plus 2010, Office Enterprise 2010, and Office Ultimate 2010 suites, as well as in the stand-alone 2010 Office release versions of these programs.*
 
-**File &gt; Server &gt; File Server Tasks Menu** Unavailable during a protected session.
+**File > Server > File Server Tasks Menu** Unavailable during a protected session.
 
-**Home &gt; Clipboard &gt; Copy** Restricted by the Copy permission. If copying is not allowed, copied content cannot be pasted into any other file or to the Microsoft&reg; Office Clipboard. Content can be copied within the protected file if the user has the change permission.
+**Home > Clipboard > Copy** Restricted by the Copy permission. If copying is not allowed, copied content cannot be pasted into any other file or to the Microsoft&reg; Office Clipboard. Content can be copied within the protected file if the user has the change permission.
 
-**Home &gt; Clipboard &gt; Paste** Restricted by the Change permission.
+**Home > Clipboard > Paste** Restricted by the Change permission.
 
-**Home &gt; Clipboard &gt; Paste Special** Restricted by the Change permission.
+**Home > Clipboard > Paste Special** Restricted by the Change permission.
 
-**Home &gt; Cells &gt; Format &gt; Move or Copy Sheet** Unavailable during a protected session.
+**Home > Cells > Format > Move or Copy Sheet** Unavailable during a protected session.
 
-**Home &gt; Cells &gt; Insert &gt; Insert Sheet** Unavailable during a protected session.
+**Home > Cells > Insert > Insert Sheet** Unavailable during a protected session.
 
-**Home &gt; Cells &gt; Delete &gt; Delete Sheet** Unavailable during a protected session.
+**Home > Cells > Delete > Delete Sheet** Unavailable during a protected session.
 
-**Home &gt; Editing &gt; Fill &gt; Across Worksheet** Restricted by the Change permission.
+**Home > Editing > Fill > Across Worksheet** Restricted by the Change permission.
 
-**Insert &gt; Tables &gt; Table** Restricted by the Change permission.
+**Insert > Tables > Table** Restricted by the Change permission.
 
-**Insert &gt; Tables &gt; PivotTable** Policy-protected files cannot be selected in the Creation Wizard.
+**Insert > Tables > PivotTable** Policy-protected files cannot be selected in the Creation Wizard.
 
-**Insert &gt; Text &gt; Object** Unavailable during a protected session. Policy-protected files cannot be inserted at any time.
+**Insert > Text > Object** Unavailable during a protected session. Policy-protected files cannot be inserted at any time.
 
-**Insert &gt; Text &gt; Header and Footer** Restricted by the Change permission. Unavailable for a policy-protected document.
+**Insert > Text > Header and Footer** Restricted by the Change permission. Unavailable for a policy-protected document.
 
-**Data &gt; Get External Data** Data from policy-protected files cannot be imported.
+**Data > Get External Data** Data from policy-protected files cannot be imported.
 
-**Data &gt;Outline &gt; Subtotals** Restricted by the Change permission.
+**Data >Outline > Subtotals** Restricted by the Change permission.
 
-**Data &gt; Data Tools &gt; Data Validation** Restricted by the Change permission.
+**Data > Data Tools > Data Validation** Restricted by the Change permission.
 
-**Review &gt; Proofing &gt; Research** Restricted by the Copy permission.
+**Review > Proofing > Research** Restricted by the Copy permission.
 
-**Review &gt; Proofing &gt; Thesaurus** Restricted by the Copy permission.
+**Review > Proofing > Thesaurus** Restricted by the Copy permission.
 
-**Review &gt; Language &gt; Translate** Restricted by the Copy permission.
+**Review > Language > Translate** Restricted by the Copy permission.
 
-**Review &gt; Changes &gt; Protect Sheet** Unavailable during a protected session.
+**Review > Changes > Protect Sheet** Unavailable during a protected session.
 
-**Review &gt; Changes &gt; Protect Workbook** Unavailable during a protected session.
+**Review > Changes > Protect Workbook** Unavailable during a protected session.
 
-**Review &gt; Changes &gt; Share Workbook** Unavailable during a protected session.
+**Review > Changes > Share Workbook** Unavailable during a protected session.
 
-**Review &gt; Changes &gt; Protect and Share Workbook** Unavailable during a protected session.
+**Review > Changes > Protect and Share Workbook** Unavailable during a protected session.
 
-**Review &gt; Changes &gt; Allow Users to Edit Ranges** Unavailable during a protected session.
+**Review > Changes > Allow Users to Edit Ranges** Unavailable during a protected session.
 
-**Review &gt; Changes &gt; Track Changes &gt; Highlight&#xA;Changes** Unavailable for a policy-protected file that contains a dynamic watermark.
+**Review > Changes > Track Changes > Highlight&#xA;Changes** Unavailable for a policy-protected file that contains a dynamic watermark.
 
-**View &gt; Macros** Restricted by the Change permission.
+**View > Macros** Restricted by the Change permission.
 
-**View &gt; Save Workspace** Command does not work.
+**View > Save Workspace** Command does not work.
 
-**Developer &gt; XML &gt; Expansion Packs** Some macros are restricted by the Copy permission and are unavailable unless copying is allowed.
+**Developer > XML > Expansion Packs** Some macros are restricted by the Copy permission and are unavailable unless copying is allowed.
 
-**Formulas &gt; Formula Auditing &gt; Error Checking** Restricted by the Change permission. Unavailable unless changing is allowed.
+**Formulas > Formula Auditing > Error Checking** Restricted by the Change permission. Unavailable unless changing is allowed.
 
 **Online Collaboration** Unavailable during a protected session.
 
@@ -717,45 +717,45 @@ The features listed below are restricted in the described situations:
 
 The features listed below are restricted in the described situations:
 
-**File &gt; New &gt; New From Existing** Available, but files created using this command during a protected session cannot be saved. Content in the new file cannot be copied to another file.
+**File > New > New From Existing** Available, but files created using this command during a protected session cannot be saved. Content in the new file cannot be copied to another file.
 
-**File &gt; Save** Restricted by the Change permission.
+**File > Save** Restricted by the Change permission.
 
-**File &gt; Save As** All options restricted by the Change permission.
+**File > Save As** All options restricted by the Change permission.
 
-**File &gt; Print** All options restricted by the Printing permission. Unavailable unless the policy allows High Resolution printing.
+**File > Print** All options restricted by the Printing permission. Unavailable unless the policy allows High Resolution printing.
 
-**File &gt; Save &amp; Send** Unavailable during a protected session.
+**File > Save &amp; Send** Unavailable during a protected session.
 
-**File &gt; Info &gt; Protect Presentation &gt; Encrypt&#xA;with Password, Add a Digital Signature, Mark as Final, Restrict&#xA;Permission by People** Unavailable during a protected session.
+**File > Info > Protect Presentation > Encrypt&#xA;with Password, Add a Digital Signature, Mark as Final, Restrict&#xA;Permission by People** Unavailable during a protected session.
 
-**File &gt; PowerPoint Options &gt; Save Auto Recover&#xA;Info** Unavailable during a protected session.
+**File > PowerPoint Options > Save Auto Recover&#xA;Info** Unavailable during a protected session.
 
-**File &gt; Server &gt; File Server Tasks Menu** Unavailable during a protected session.
+**File > Server > File Server Tasks Menu** Unavailable during a protected session.
 
-**Home &gt; Clipboard &gt; Copy** Restricted by the Copy permission. If copying is not permitted, copied content cannot be pasted within the document, into any other file, or to the Office Clipboard. Content can be copied within the protected file if the user has the change permission.
+**Home > Clipboard > Copy** Restricted by the Copy permission. If copying is not permitted, copied content cannot be pasted within the document, into any other file, or to the Office Clipboard. Content can be copied within the protected file if the user has the change permission.
 
-**Home &gt; Clipboard &gt; Paste** Restricted by the Change permission. If copying is not permitted, copied content cannot be pasted within the document.
+**Home > Clipboard > Paste** Restricted by the Change permission. If copying is not permitted, copied content cannot be pasted within the document.
 
-**Home &gt; Clipboard &gt; Paste Special** Restricted by the Change permission.
+**Home > Clipboard > Paste Special** Restricted by the Change permission.
 
-**Home &gt; Slides &gt; New Slides &gt; Slides from Outline,&#xA;Reuse Slides** Unavailable during a protected session.
+**Home > Slides > New Slides > Slides from Outline,&#xA;Reuse Slides** Unavailable during a protected session.
 
-**Insert &gt; Text &gt; Object** Unavailable during a protected session. Policy-protected files cannot be inserted at any time.
+**Insert > Text > Object** Unavailable during a protected session. Policy-protected files cannot be inserted at any time.
 
-**Design &gt; Background &gt; Background Styles, Hide&#xA;Background Graphics, Format Background** Unavailable for a policy-protected file that contains a dynamic watermark.
+**Design > Background > Background Styles, Hide&#xA;Background Graphics, Format Background** Unavailable for a policy-protected file that contains a dynamic watermark.
 
-**Slide Show &gt; Set Up &gt; Record Slide Show** Restricted by change permission .
+**Slide Show > Set Up > Record Slide Show** Restricted by change permission .
 
-**Review &gt; Proofing &gt; Thesaurus** Restricted by the Copy permission.
+**Review > Proofing > Thesaurus** Restricted by the Copy permission.
 
-**Review &gt; Language &gt; Translate** Restricted by the Copy permission.
+**Review > Language > Translate** Restricted by the Copy permission.
 
-**Review &gt; Language &gt; Translate &gt; Mini Translator** Enabled with the Copy permission.
+**Review > Language > Translate > Mini Translator** Enabled with the Copy permission.
 
-**View &gt; Presentation Views &gt; Slide Show** Restricted by the Change permission. If changes are not permitted, slide shows cannot be viewed if the file was modified.
+**View > Presentation Views > Slide Show** Restricted by the Change permission. If changes are not permitted, slide shows cannot be viewed if the file was modified.
 
-**View &gt; Macros** Some macros are restricted by the Copy permission and are unavailable unless copying is allowed.
+**View > Macros** Some macros are restricted by the Copy permission and are unavailable unless copying is allowed.
 
 **Add-ins** Cannot be added or removed during a protected session.
 
