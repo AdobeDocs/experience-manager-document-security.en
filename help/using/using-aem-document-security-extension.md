@@ -13,25 +13,25 @@ exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 
 You can control how recipients use your policy-protected files, no matter how widely you distribute them.
 
-Using Document Security Extension for Microsoft&reg; Office, you can perform these tasks:
+Using the Document Security Extension for Microsoft&reg; Office, you can perform these tasks:
 
 * Configure your connection to Document Security
 * Apply a policy to a file
-* Open the Document Security web pages to create and manage user policies
+* Open the Document Security Web pages to create and manage user policies
 * Remove policy protection from a file
 * Change the policy that is applied to a file
-* Open the Document Security web pages to revoke access to files or change the policy for the file
-* Open the Document Security web pages to view the file's audit history
+* Open the Document Security Web pages to revoke access to files or change the policy for the file
+* Open the Document Security Web pages to view the file's audit history
 
 ### Connect to a Document Security server {#connect-to-a-document-security-server}
 
-If you intend to apply policies to files, you must configure the connection settings for Document Security. Depending on how Document Security Extension for Microsoft&reg; Office was installed, you may already have default connection settings. You can add connection settings for one or more instances of Document Security. You can obtain server information from the Document Security administrator.
+If you intend to apply policies to files, you must configure the connection settings for Document Security. Depending on how the Document Security Extension for Microsoft&reg; Office is installed, you may already have default connection settings. You can add connection settings for one or more instances of Document Security. You can obtain server information from the Document Security administrator.
 
-Set the server that you want to use to protect files or manage your protected files as the default server. When you apply a policy to a new file or open the Document Security web pages, Document Security Extension for Microsoft&reg; Office connects to the default server. If you protect files using more than one instance of Document Security, you must change the default server setting when you switch between servers. You can open files that are protected by any instance of Document Security as long as you have authorization to open the file.
+Set the server that you want to use to protect files or manage your protected files as the default server. When you apply a policy to a new file or open the Document Security web pages, the Document Security Extension for Microsoft&reg; Office connects to the default server. If you protect files using more than one instance of Document Security, you must change the default server setting when you switch between servers. You can open files that are protected by any instance of Document Security as long as you have authorization to open the file.
 
-If your Document Security server employs certificate-based authentication, you need to install the certificate that you received in your local machine. You are required to choose certificate authentication, and provide the certificate that you want to use to authenticate.
+If your Document Security server employs certificate-based authentication, you must install the certificate that you received in your local machine. You are required to choose a certificate authentication, and provide the certificate that you want to use to authenticate.
 
-After you configure the connection settings for an instance of Document Security in one Microsoft&reg; Office application, it is configured for all of Word, Excel, and PowerPoint.
+After you configured the connection settings for an instance of Document Security in one Microsoft&reg; Office application, it is configured for all of Word, Excel, and PowerPoint.
 
 #### Install the client-side certificate {#install-the-client-side-certificate}
 
@@ -66,11 +66,11 @@ If you are required to access the Document Security web pages through certificat
 
 >[!NOTE]
 >
->If you cannot connect to the server, try to open the Document Security web pages in Internet Explorer. If you cannot connect to the server using Internet Explorer or if a dialog box displays a warning about the server certificate, Document Security Extension for Microsoft&reg; Office cannot connect to the server. Contact the server administrator for assistance.
+>If you cannot connect to the server, try to open the Document Security Web pages in Internet Explorer. If you cannot connect to the server using Internet Explorer or if a dialog box displays a warning about the server certificate, the Document Security Extension for Microsoft&reg; Office cannot connect to the server. Contact the server administrator for assistance.
 
 >[!NOTE]
 >
->If you cannot connect to Document Security, a message appears stating that "The username and password are incorrect, please check your configuration settings and try again". This message may appear if you cannot connect for another reason. If you are connecting to the server for the first time, verify that you set the server name and port correctly.
+>If you cannot connect to Document Security, a message appears stating that "The username and password are incorrect, please check your configuration settings and try again." This message may appear if you cannot connect for another reason. If you were connecting to the server for the first time, verify that you set the server name and port correctly.
 
 #### Specify the default server {#specify-the-default-server}
 
@@ -82,17 +82,17 @@ If you are required to access the Document Security web pages through certificat
 
 ### Using Third-party authentication providers {#using-third-party-authentication-providers}
 
-You can use third-party authentication providers with AEM Forms Document Security. These authentication providers help you add an extra access layer to the protected documents. AEM Forms Document Security supports following extended authentication workflows:
+You can use third-party authentication providers with AEM Forms Document Security. These authentication providers help you add an extra access layer to the protected documents. AEM Forms Document Security supports the following extended authentication workflows:
 
-* Extended authentication using default AEM Forms URL
+* Extended authentication using the default AEM Forms URL
 * Extended authentication using a custom URL
 * Default extended authentication workflow with third-party identity providers configured on AEM Forms on JEE server
 * Custom extended authentication workflow with third-party identity providers configured on AEM Forms on JEE server
-* Extended authentication using customized page for listing SAML Authentications
+* Extended authentication using a customized page for listing SAML Authentications
 
 #### Extended authentication using default AEM Forms URL {#extended-authentication-using-default-aem-forms-url}
 
-You can use default AEM Forms URL for extended authentication. The default landing page contains Adobe branding. Moreover, default AEM Forms settings are used on using default AEM Forms URL for extended authentication.
+You can use the default AEM Forms URL for extended authentication. The default landing page contains Adobe branding. Moreover, default AEM Forms settings are used on using the default AEM Forms URL for extended authentication.
 
 Perform the following steps to enable extended authentication with the default Adobe Landing URL:
 
@@ -105,9 +105,9 @@ Perform the following steps to enable extended authentication with the default A
 
    >[!NOTE]
    >
-   >Use a fully qualified hostname in the URL. Adobe recommends that you use HTTPS protocol.
+   >Use a fully qualified hostname in the URL. Adobe recommends that you use the HTTPS protocol.
 
-   Now, AEM Forms document security is configured to use extended authentication with default AEM Forms landing URL.
+   Now, AEM Forms Document Security is configured to use extended authentication with the default AEM Forms landing URL.
 
    ![](assets/third-party-authentication.png)
 
@@ -122,17 +122,17 @@ You can package the custom authentication page in a war file and deploy the war 
 
 To enable extended authentication with a custom landing URL:
 
-1. Deploy the custom authentication war file to AEM Forms Server.
+1. Deploy the custom authentication WAR file to AEM Forms Server.
 1. Open AEM Forms Admin UI.
 1. Navigate to Services > Document Security > Configuration > Server Configuration.
-1. Enable the Allow Extended Authentication option and specify custom Extended Authentication Landing URL.
-1. Add the following entries to config.xml file under the SSO node after entry *&lt;node name="AllowedUrls">*:
+1. Enable the Allow Extended Authentication option and specify a custom Extended Authentication Landing URL.
+1. Add the following entries to the `config.xml` file under the SSO node after entry *&lt;node name="AllowedUrls">*:
 
    >[!NOTE]
    >
-   ><entry&nbsp;key="sso-l"&nbsp;value="/&nbsp;sample_/login.jsp"/>!!discoiqbr!!<entry&nbsp;key="sso-s"&nbsp;value="/&nbsp;sample_/welcome.jsp">!!discoiqbr!!<entry&nbsp;key="sso-o"&nbsp;value="/&nbsp;sample_/logout.jsp"/>!!discoiqbr!!
+   ><entry&nbsp;key="sso-l"&nbsp;value="/&nbsp;sample_/login.jsp"/>`!!discoiqbr!!`<entry&nbsp;key="sso-s"&nbsp;value="/&nbsp;sample_/welcome.jsp">`!!discoiqbr!!`<entry&nbsp;key="sso-o"&nbsp;value="/&nbsp;sample_/logout.jsp"/>`!!discoiqbr!!`
 
-   For step-by-step information on updating the config.xml file, see [Manually editing the document security configuration file](https://helpx.adobe.com/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file).
+   For step-by-step information on updating the config.xml file, see [Manually editing the document security configuration file](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions#manually_editing_the_document_security_configuration_file).
 
    Now, AEM Forms document security is configured to use extended authentication with a custom landing URL
 
@@ -163,7 +163,7 @@ You can also display a custom page to include all the authentication providers c
 
    *saml.sp.discovery.url=/demoJSP/saml_discovery.jsp*
 
-   Now, AEM Forms document security is configured to display a custom page containing all the configured authentication providers.
+   Now, AEM Forms Document Security is configured to display a custom page containing all the configured authentication providers.
 
 ### Obtain a user account {#obtaining-a-user-account}
 
@@ -172,13 +172,13 @@ If you do not already have a Document Security account, Document Security may in
 * A Document Security user who wants to send you a policy-protected file adds you to a policy.
 * The Document Security administrator creates an account for you.
 
-After you register and activate your account, you can use policy-protected files that you were given authorization to use through a policy.
+After you registered and activated your account, you can use policy-protected files that you were given authorization to use through a policy.
 
 >[!NOTE]
 >
 >If you receive a policy-protected file and do not have a Document Security account, contact the person who sent you the file for assistance. Similarly, if you receive an invitation to register, reach out to the sender for help.
 
-If you receive an email registration invitation from Document Security, you can register by using the URL in the email to open the online registration page. After you register, you will receive a second notice about activating your account.
+If you receive an email registration invitation from Document Security, you can register by using the URL in the email to open the online registration page. After your registration, you receive a second notice about activating your account.
 
 #### Obtain an external user account {#obtain-an-external-user-account}
 
@@ -194,7 +194,7 @@ If you receive an email registration invitation from Document Security, you can 
 1. Open the Document Security registration confirmation email.
 1. Click the URL that appears in the message.
 1. Click the link to the Login page.
-1. In the **Username** box, type the email address you registered under with Document Security. This email address is your default Document Security user name.
+1. In the **Username** box, type the email address you are registered under with Document Security. This email address is your default Document Security user name.
 1. In the **Password** box, type the password you created when you registered.
 1. Click **Login**.
 
@@ -234,7 +234,7 @@ Some of the policy settings available for creating policies in the Document Secu
   </tr>
   <tr>
    <td><p>Change > Alter Pages</p></td>
-   <td><p>Not applicable.</p><p>Includes inserting, deleting, and rotating pages.</p></td>
+   <td><p>Not applicable.</p><p>It includes inserting, deleting, and rotating pages.</p></td>
   </tr>
   <tr>
    <td><p>Change > Fill &amp; Sign</p></td>
@@ -323,7 +323,7 @@ For more information about creating and managing policies, see [Document Securit
 
 You can apply any available policy to a file, including policies that you created and policies that are part of policy sets that you have access to. Before applying a policy, you must save the file.
 
-After you apply a policy, it is added to the Recently Used list on the AEM Document Security menu to make it easier for you to apply your most frequently used policies. The Recently Used list shows policies only for the server that you are connected to or your default server if you have not logged in to another Document Security instance.
+After you applied a policy, it is added to the Recently Used list on the AEM Document Security menu to make it easier for you to apply your most frequently used policies. The Recently Used list shows policies only for the server that you are connected to or your default server if you have not logged in to another Document Security instance.
 
 >[!NOTE]
 >
@@ -338,7 +338,7 @@ After you apply a policy, it is added to the Recently Used list on the AEM Docum
 1. Select a policy from the list and click **Apply**.
 1. Save the file.
 
-#### Apply a recently-used policy {#apply-a-recently-used-policy}
+#### Apply a recently used policy {#apply-a-recently-used-policy}
 
 1. In Document Security Extension for Microsoft&reg; Office 2010 and 2013, on the **Document Security** tab, select **Secure** > *[Policy Name]*.
 1. Save the file.
@@ -347,13 +347,13 @@ After you apply a policy, it is added to the Recently Used list on the AEM Docum
 
 The file publisher owns the intellectual property in policy-protected files, which Document Security protects.
 
-You can use policy-protected files whether you are internal or external to the file publisher's organization. .Document Security must recognize you to open policy-protected files. It must do so through LDAP/Active Directory. Or, it must do so as a local user for LiveCycle/AEM forms on JEE, or by registering after an invitation.
+You can use policy-protected files whether you are internal or external to the file publisher's organization. Document Security must recognize you to open policy-protected files. It must do so through LDAP/Active Directory. Or, it must do so as a local user for LiveCycle/AEM forms on JEE, or by registering after an invitation.
 
 If you receive a policy-protected file and don't have a Document Security account, contact the sender for assistance. Similarly, if you receive an invitation to register, reach out to the sender for help.
 
 ### Working with policy-protected files in Microsoft&reg; Office {#working-with-policy-protected-files-in-microsoft-office}
 
-Document Security Extension for Microsoft&reg; Office restricts certain Word, Excel, and PowerPoint functionality to protect the file publisher's intellectual property. If you do not have permission to change the file, you cannot save modifications to it.
+The Document Security Extension for Microsoft&reg; Office restricts certain Word, Excel, and PowerPoint functionality to protect the file publisher's intellectual property. If you do not have permission to change the file, you cannot save modifications to it.
 
 If you are working with a policy-protected file, some product features may not be available or may not work as usual. If an unprotected file is open, most features are enabled, except those features that let you import or copy content from a policy-protected file without copy or export permissions.
 
@@ -361,25 +361,25 @@ If you are working with a policy-protected file, some product features may not b
 >
 >When using Document Security Extension-supported Office applications, it is recommended that you disable the Windows DEP setting. To ensure smooth startup of Office applications on a machine with Document Security Extension and McAfee VirusScan with On-Access Scan enabled, disable the Buffer Overflow Protection option in the McAfee VirusScan Console. This adjustment helps prevent potential conflicts.
 
-If a feature is not available, the command name on the menu and the related toolbar button are unavailable. In Document Security Extension for Microsoft&reg; Office, when you hover the mouse pointer over the command or button, a tool tip indicates that the command is made unavailable by Document Security.
+If a feature is not available, the command name on the menu and the related toolbar button are unavailable. In the Document Security Extension for Microsoft&reg; Office, when you hover the mouse pointer over the command or button, a tool tip indicates that the command is made unavailable by Document Security.
 
 ### Opening policy-protected files {#opening-policy-protected-files}
 
-You can open policy-protected files by using the same methods that you use to open any other file. If you are not already logged in to Document Security, you are prompted to do so. That is, if you are not connected to the Internet and you can open the file offline. If you cancel the login process, access is denied.
+You can open policy-protected files by using the same methods that you use to open any other file. If you were not already logged in to Document Security, you are prompted to do so. That is, if you are not connected to the Internet and you can open the file offline. If you cancel the login process, access is denied.
 
-If you do not have permission to open the file, you are informed that access is denied. If the file access privileges were revoked, you may also be directed to an updated version of the file if one is available. For additional assistance if you cannot open a policy-protected file, contact the file publisher.
+If you did not have permission to open the file, you are informed that access is denied. If the file access privileges were revoked, you may also be directed to an updated version of the file if one is available. For additional assistance if you cannot open a policy-protected file, contact the file publisher.
 
 When a protected file is open, text in the title bar that follows the file name states that the file is protected by AEM Document Security.
 
 When opening a protected document in Document Security Extension for Microsoft&reg; Office from SharePoint Server, ensure the Office program associated with the file type, such as Word, Excel, or PowerPoint, is open. If you try to open the file without opening the associated application, the document may not open and an error message indicating that you must install the applicable plug-in is displayed. In addition to opening the required application, Adobe recommends that you clear the cache folder. Do so before opening a protected document in Document Security Extension for Office from SharePoint Server. Also, when you open a protected document from SharePoint Server, all permissions on the document are disabled, regardless of the policy that was applied.
 
-Depending on the authentication method implemented on Document Security, you may be prompted to choose the authentication method when you open a protected document. If Document Security supports more than one authentication method, the authentication options are presented to you. For example, if Document Security server provides both username/password and certificate authentication, you can choose the appropriate authentication method. If Certificate-based authentication enabled, you are prompted to use the certificate that you have received and installed.
+Depending on the authentication method implemented on Document Security, you may be prompted to choose the authentication method when you open a protected document. If Document Security supports more than one authentication method, the authentication options are presented to you. For example, if a Document Security server provides both username/password and certificate authentication, you can choose the appropriate authentication method. If Certificate-based authentication is enabled, you were prompted to use the certificate that you have received and installed.
 
-The user experience when opening protected files depends on the mutual authentication configuration on the server. If only one valid client certificate is installed, then no authentication dialog appears and files opens successfully. However, if multiple client certificates are installed on a machine, then an authentication dialog appears. The user has to choose a valid certificate to open the protected file.
+The user experience when opening protected files depends on the mutual authentication configuration on the server. If only one valid client certificate is installed, then no authentication dialog box appears and the files open successfully. However, if multiple client certificates are installed on a machine, then an authentication dialog appears. The user has to choose a valid certificate to open the protected file.
 
 ### Removing policy protection from a file {#removing-policy-protection-from-a-file}
 
-If you are permitted, you can remove policy protection from files that you have protected. If you do so, the file is no longer protected by Document Security.
+If you were permitted, you can remove policy protection from files that you have protected. If you do so, the file is no longer protected by Document Security.
 
 1. In Document Security Extension for Microsoft&reg; Office 2010 and 2013, on the **Document Security** tab, select **Remove**.
 
@@ -403,7 +403,7 @@ Do the following:
 
 If your Administrator has enabled the Auto-apply policy functionality, any document you create or edit is automatically protected when you save the document.
 
-If Auto-apply policy is enabled, Document Security Extension for Microsoft&reg; Office prompts you to log in to the Document Security server. Enter your Username and Password so the server can authenticate you. If you have provided the correct log-in credentials, the document is saved and protected.
+If the Auto-apply policy is enabled, the Document Security Extension for Microsoft&reg; Office prompts you to log in to the Document Security server. Enter your Username and Password so the server can authenticate you. If you have provided the correct log-in credentials, the document is saved and protected.
 
 >[!NOTE]
 >
@@ -417,15 +417,15 @@ Do the following:
 
 * In Document Security Extension for Microsoft&reg; Office 2010 and 2013, on the **Document Security** tab, select **Synchronize Off-line**.
 
-  ***note**: The Synchronize Off-Line button is available even though the user does not have offline permission for the document. However, selecting the button does nothing. *
+  ***note**: The Synchronize Off-Line button is available even though the user does not have offline permission for the document. However, selecting the button does nothing.*
 
 ### Working with dynamic watermarks {#working-with-dynamic-watermarks}
 
 Document Security Extension for Microsoft&reg; Office supports the inclusion of dynamic text-based watermarks in policy-protected documents. A dynamic watermark can include information that may change, such as the date, time, user name, or name of the policy. If a user prints a policy-protected file, and that file contains a dynamic watermark and the permission to print, the watermark appears in the output.
 
-Document Security Extension does not support rich watermark features. Rich watermark features include such things as PDF-based watermarks, multiple elements in a watermark, and text formatting options. They also include page range.
+Document Security Extension does not support rich watermark features. Rich watermark features include such things as PDF-based watermarks, multiple elements in a watermark, and text formatting options. They also include the page range.
 
-You create a dynamic watermark using the Document Security web pages. For more information, see [Document Security End User Help](https://www.adobe.com/go/learn_lc_euRightsMgmt_11).
+You can create a dynamic watermark using the Document Security Web pages. For more information, see [Document Security End User Help](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/work-with-document-security/document-security).
 
 Document Security Extension for Microsoft&reg; Office provides support for these watermark features:
 
@@ -446,8 +446,8 @@ Document Security Extension for Microsoft&reg; Office provides support for these
    <td><p>Supported.</p></td>
   </tr>
   <tr>
-   <td><p>Use as background</p></td>
-   <td><p>The display behavior of a dynamic watermark is the same regardless of whether you select Use As Background.</p><p>For Word 2010 and 2013, dynamic watermark appears only in Print Layout and Print Preview view. </p><p>For Excel 2010 and 2013 also , it appears in the Print Preview and Page Layout views.</p></td>
+   <td><p>Use as a background</p></td>
+   <td><p>The display behavior of a dynamic watermark is the same regardless of whether you select Use As Background.</p><p>For Word 2010 and 2013, the dynamic watermark appears only in the Print Layout and Print Preview view. </p><p>For Excel 2010 and 2013 also, it appears in the Print Preview and Page Layout views.</p></td>
   </tr>
   <tr>
    <td><p>Vertical position</p></td>
@@ -474,7 +474,7 @@ Document Security Extension for Microsoft&reg; Office provides support for these
 
 ### Opening the Document Security web pages {#opening-the-document-security-web-pages}
 
-You can open the Document Security web pages to create and update your user policies and to view status and audit information about your policy-protected files. You can also use the Document Security web pages to change policies or revoke access for a policy-protected file.
+You can open the Document Security Web pages to create and update your user policies and to view status and audit information about your policy-protected files. You can also use the Document Security Web pages to change policies or revoke access for a policy-protected file.
 
 To open the Document Security web pages, in Document Security Extension for Microsoft&reg; Office 2010 and 2013, on the **Document Security** tab, select **Create and Manage Policies**. If you have not yet provided login information, the browser opens to the server login page.
 
@@ -482,7 +482,7 @@ To open the Document Security web pages, in Document Security Extension for Micr
 
 If you have permissions, usually as a Document Security administrator or the file publisher, you can later apply a different policy to a file or change the settings of the currently applied policy.
 
-To change the settings for a policy, use the Document Security web pages.
+To change the settings for a policy, use the Document Security Web pages.
 
 1. Do the following:
 
@@ -498,13 +498,13 @@ You can revoke the ability to open files that you protected. When revoking file 
 
     * In Document Security Extension for Microsoft&reg; Office 2010 and 2013, on the **Document Security** tab, select **Revoke**.
 
-   The Document Security web pages open to the Revoke Documents page.
+   The Document Security Web pages open to the Revoke Documents page.
 
 1. Specify a message to display and, if available, a URL for the updated version, and click **OK**.
 
 For more information about revoking file access privileges, see [Document Security End User Help](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
 
-Access privileges can be reinstated through the Document Security web pages.
+Access privileges can be reinstated through the Document Security Web pages.
 
 ### Viewing the file audit history {#viewing-the-file-audit-history}
 
@@ -534,7 +534,7 @@ Audited events for Word, Excel, and PowerPoint files include the following:
 
 In Document Security Extension for Microsoft&reg; Office 2010 and 2013, on the **Document Security** tab, select **Audit History**.
 
-The Document Security web pages open to the Events page, which displays audited events for the current file.
+The Document Security Web pages open to the Events page, which displays audited events for the current file.
 
 ### Microsoft&reg; Office restricted features {#microsoft-office-restricted-features}
 
@@ -561,7 +561,7 @@ If a policy-protected file that does not allow the user to make changes to it is
 
 #### Word 2010 and Word 2013 restrictions {#word-2010-and-word-2013-restrictions}
 
-Opening a policy-protected file in Word makes the saving of automatic file-recovery information unavailable until you close and restart Word. In addition, the features listed below are restricted in the described situations:
+When you open a policy-protected file in Word, automatic file-recovery information cannot be saved until you close and restart Word. In addition, the features listed below are restricted in the described situations:
 
 **File > New > New From Existing** Available but files created using this command while any policy-protected file is open cannot be saved. Content in the new file cannot be copied to another file.
 
@@ -573,11 +573,11 @@ Opening a policy-protected file in Word makes the saving of automatic file-recov
 
 **File > Save &amp; Send** All options unavailable during a protected session.
 
-**File > Info > Protect Document > Encrypt with&#xA;Password, Add Digital Signature, Mark as Final, Restrict Permission&#xA;by People** Unavailable during a protected session.
+**File > Info > Protect Document > Encrypt with Password, Add Digital Signature, Mark as Final, Restrict Permission by People** Unavailable during a protected session.
 
 **File > Workflows** Unavailable during a protected session.
 
-***note**: The ability to start a workflow from the 2010 Microsoft&reg; Office system versions of Word, Excel, and PowerPoint is available only in the Office Professional Plus 2010, Office Enterprise 2010, and Office Ultimate 2010 suites, as well as in the stand-alone 2010 Office release versions of these programs.*
+***Note**: Starting a workflow in Word, Excel, and PowerPoint 2010 is only available in Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010, and stand-alone 2010 versions.*
 
 **Blog Post > Publish** Unavailable during a protected session.
 
@@ -597,9 +597,9 @@ Opening a policy-protected file in Word makes the saving of automatic file-recov
 
 **Review > Proofing > Thesaurus** Restricted by the Copy permission. Unavailable if copying is not allowed.
 
-**Review > Language > Translate > Translate&#xA;Document** Enabled with the Copy permission.
+**Review > Language > Translate > Translate Document** Enabled with the Copy permission.
 
-**Review > Language > Translate > Translate&#xA;Selected Text** Enabled with the Copy permission.
+**Review > Language > Translate > Translate Selected Text** Enabled with the Copy permission.
 
 **Review > Language > Translate > Mini Translator** Enabled with the Copy permission.
 
@@ -609,13 +609,13 @@ Opening a policy-protected file in Word makes the saving of automatic file-recov
 
 **Review > Protect > Restrict Editing** Unavailable during a protected session.
 
-**View > Macros** Some macros are restricted by the Copy permission and are unavailable unless copying is allowed.
+**View > Macros** The Copy permission restricts some macros, making them unavailable unless copying is allowed.
 
 **Add-ins** Cannot be added or removed during a protected session.
 
 **Online Collaboration** Unavailable during a protected session.
 
-**Master and subdocuments** Subdocuments are governed by the master documents policy when opened within the master document. If opened separately, sub documents cannot be printed, copied from, or modified.
+**Primary and subdocuments** Primary documents policy governs subdocuments when you open them within the primary document. If opened separately, sub documents cannot be printed, copied from, or modified.
 
 **Resummarize** Unavailable during a protected session.
 
@@ -623,9 +623,9 @@ Opening a policy-protected file in Word makes the saving of automatic file-recov
 
 **Document Panel** Unavailable during a protected session.
 
-**Developer > Document Template** Unavailable during a protected session. To can access this command, select File > Options > Customize > Developer Tab > Templates > Document Template.
+**Developer > Document Template** Unavailable during a protected session. To access this command, select File > Options > Customize > Developer Tab > Templates > Document Template.
 
-**Outlining > Master Document > Create Subdocument,&#xA;Insert Subdocument** Unavailable during a protected session.
+**Outlining > Primary Document > Create Subdocument, Insert Subdocument** Unavailable during a protected session.
 
 #### Excel 2010 and Excel 2013 restrictions {#excel-2010-and-excel-2013-restrictions}
 
@@ -649,7 +649,7 @@ The features listed below are restricted in the described situations:
 
 **File > Workflows** Unavailable during a protected session.
 
-***note**: The ability to start a workflow from the 2010 Microsoft&reg; Office system versions of Word, Excel, and PowerPoint is available only in the Office Professional Plus 2010, Office Enterprise 2010, and Office Ultimate 2010 suites, as well as in the stand-alone 2010 Office release versions of these programs.*
+***Note**: Starting a workflow in Word, Excel, and PowerPoint 2010 is only available in Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010, and stand-alone 2010 versions.*
 
 **File > Server > File Server Tasks Menu** Unavailable during a protected session.
 
@@ -675,7 +675,7 @@ The features listed below are restricted in the described situations:
 
 **Insert > Text > Header and Footer** Restricted by the Change permission. Unavailable for a policy-protected document.
 
-**Data > Get External Data** Data from policy-protected files cannot be imported.
+**Data > Get External Data** The data from policy-protected files cannot be imported.
 
 **Data >Outline > Subtotals** Restricted by the Change permission.
 
@@ -697,13 +697,13 @@ The features listed below are restricted in the described situations:
 
 **Review > Changes > Allow Users to Edit Ranges** Unavailable during a protected session.
 
-**Review > Changes > Track Changes > Highlight&#xA;Changes** Unavailable for a policy-protected file that contains a dynamic watermark.
+**Review > Changes > Track Changes > Highlight Changes** Unavailable for a policy-protected file that contains a dynamic watermark.
 
 **View > Macros** Restricted by the Change permission.
 
 **View > Save Workspace** Command does not work.
 
-**Developer > XML > Expansion Packs** Some macros are restricted by the Copy permission and are unavailable unless copying is allowed.
+**Developer > XML > Expansion Packs** The Copy permission restricts some macros, making them unavailable unless you allow copying.
 
 **Formulas > Formula Auditing > Error Checking** Restricted by the Change permission. Unavailable unless changing is allowed.
 
@@ -711,7 +711,7 @@ The features listed below are restricted in the described situations:
 
 **Save Auto Recover Info** Unavailable during a protected session.
 
-***Note**: If you attempt to change a cell in a policy-protected file for which you do not have permissions to make changes, Excel displays an incorrect warning message indicating that you must remove protection from the file by using the Unprotect Sheet command. Using the Unprotect Sheet command does not remove policy protection from the file.*
+***Note**: If you try to change a cell in a policy-protected file without permission, Excel incorrectly warns you to use the Unprotect Sheet command to remove the protection.*
 
 #### PowerPoint 2010 and PowerPoint 2013 restrictions {#powerpoint-2010-and-powerpoint-2013-restrictions}
 
@@ -727,9 +727,9 @@ The features listed below are restricted in the described situations:
 
 **File > Save &amp; Send** Unavailable during a protected session.
 
-**File > Info > Protect Presentation > Encrypt&#xA;with Password, Add a Digital Signature, Mark as Final, Restrict&#xA;Permission by People** Unavailable during a protected session.
+**File > Info > Protect Presentation > Encrypt with Password, Add a Digital Signature, Mark as Final, Restrict Permission by People** Unavailable during a protected session.
 
-**File > PowerPoint Options > Save Auto Recover&#xA;Info** Unavailable during a protected session.
+**File > PowerPoint Options > Save Auto Recover Info** Unavailable during a protected session.
 
 **File > Server > File Server Tasks Menu** Unavailable during a protected session.
 
@@ -739,13 +739,13 @@ The features listed below are restricted in the described situations:
 
 **Home > Clipboard > Paste Special** Restricted by the Change permission.
 
-**Home > Slides > New Slides > Slides from Outline,&#xA;Reuse Slides** Unavailable during a protected session.
+**Home > Slides > New Slides > Slides from Outline, Reuse Slides** Unavailable during a protected session.
 
 **Insert > Text > Object** Unavailable during a protected session. Policy-protected files cannot be inserted at any time.
 
-**Design > Background > Background Styles, Hide&#xA;Background Graphics, Format Background** Unavailable for a policy-protected file that contains a dynamic watermark.
+**Design > Background > Background Styles, Hide Background Graphics, Format Background** Unavailable for a policy-protected file that contains a dynamic watermark.
 
-**Slide Show > Set Up > Record Slide Show** Restricted by change permission .
+**Slide Show > Set Up > Record Slide Show** Restricted by change permission.
 
 **Review > Proofing > Thesaurus** Restricted by the Copy permission.
 
@@ -755,7 +755,7 @@ The features listed below are restricted in the described situations:
 
 **View > Presentation Views > Slide Show** Restricted by the Change permission. If changes are not permitted, slide shows cannot be viewed if the file was modified.
 
-**View > Macros** Some macros are restricted by the Copy permission and are unavailable unless copying is allowed.
+**View > Macros** The Copy permission restricts some macros, making them unavailable unless copying is allowed.
 
 **Add-ins** Cannot be added or removed during a protected session.
 
@@ -763,14 +763,14 @@ The features listed below are restricted in the described situations:
 
 ## Use third-party authentication providers {#use-third-party-authentication-providers}
 
-You can use third-party authentication providers with AEM Forms Document Security. These authentication providers help you add an extra access layer to the protected documents. AEM Forms Document Security supports following extended authentication workflows:
+You can use third-party authentication providers with AEM Forms Document Security. These authentication providers help you add an extra access layer to the protected documents. AEM Forms Document Security supports the following extended authentication workflows:
 
-* Extended authentication using default AEM Forms URL
+* Extended authentication using the default AEM Forms URL
 * Extended authentication using a custom URL
 * Default extended authentication workflow with third-party identity providers configured on AEM Forms on JEE server
 * Custom extended authentication workflow with third-party identity providers configured on AEM Forms on JEE server
-* Extended authentication using customized page for listing SAML Authentications
+* Extended authentication using a customized page for listing SAML Authentications
 
 ## Glossary {#glossary}
 
-For information about LiveCycle and AEM forms on JEE terminology, see [Chapter 19: Glossary](https://www.adobe.com/go/learn_aemforms_designer_65).
+For information about LiveCycle and AEM forms on JEE terminology, see [Chapter 19: Glossary](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).
