@@ -48,7 +48,7 @@ AEM Document Security Extension for Microsoft Office does not support third-part
 
 Ensure the following minimum configurations on which you want to install Document Security Extension:
 
-* Microsoft Office 2019 Professional Plus on Windows 11.
+* Microsoft Office 2019 Professional Plus on Microsoft Windows 11.
 * 32-bit or 64-bit versions of Microsoft Windows 10 in English, French, German, Japanese, Italian, Spanish, Brazilian Portuguese, Korean, Simplified Chinese, or Traditional Chinese.
   **Note:** *Document security extension for Microsoft Office is also expected to work on Microsoft Surface devices.*
 
