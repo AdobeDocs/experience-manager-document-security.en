@@ -16,9 +16,10 @@ Using Document Security Extension for Microsoft&reg; Office software, you can ma
 
 ## System requirements {#system-requirements}
 
-* 32-bit or 64-bit versions of Microsoft&reg; Windows 7 or Windows 10
+* 32-bit or 64-bit versions of Microsoft&reg; Office 2019 Professional Plus on Microsoft&reg; Windows 11
+* 32-bit or 64-bit versions of Microsoft&reg; Windows 10
 * Note: Document security extension for Microsoft&reg; Office is also expected to work on Microsoft&reg; Surface devices.
-* 32-bit or 64-bit versions of Microsoft&reg; Office 2013, 2016, 2019 or Microsoft&reg; Office desktop applications installed as part of Office 365
+* 32-bit or 64-bit versions of Microsoft&reg; 2016, 2019 or Microsoft&reg; Office desktop applications installed as part of Office 365
 * 1.3-GHz processor or higher
 * 2 GB of RAM
 * 100 MB of available hard disk space
