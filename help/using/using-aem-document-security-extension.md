@@ -367,7 +367,7 @@ If a feature is not available, the command name on the menu and the related tool
 
 You can open policy-protected files by using the same methods that you use to open any other file. If you were not already logged in to Document Security, you are prompted to do so. That is, if you are not connected to the Internet and you can open the file offline. If you cancel the login process, access is denied.
 
-If you did not have permission to open the file, you are informed that access is denied. If the file access privileges were revoked, you may also be directed to an updated version of the file if one is available. For additional assistance if you cannot open a policy-protected file, contact the file publisher.
+If you did not have permission to open the file, you are informed that access is denied. If the file access privileges are revoked, you may also be directed to an updated version of the file if one is available. For additional assistance if you cannot open a policy-protected file, contact the file publisher.
 
 When a protected file is open, text in the title bar that follows the file name states that the file is protected by AEM Document Security.
 
@@ -401,13 +401,13 @@ Do the following:
 
 ### Saving documents when Auto-apply policy is enabled {#saving-documents-when-auto-apply-policy-is-enabled}
 
-If your Administrator has enabled the Auto-apply policy functionality, any document you create or edit is automatically protected when you save the document.
+If your Administrator has enabled the Auto-applied policy functionality, any document you create or edit is automatically protected when you save the document.
 
-If the Auto-apply policy is enabled, the Document Security Extension for Microsoft&reg; Office prompts you to log in to the Document Security server. Enter your Username and Password so the server can authenticate you. If you have provided the correct log-in credentials, the document is saved and protected.
+If the Auto-applied policy is enabled, the Document Security Extension for Microsoft&reg; Office prompts you to log in to the Document Security server. Enter your Username and Password so the server can authenticate you. If you have provided the correct log-in credentials, the document is saved and protected.
 
 >[!NOTE]
 >
->If you cannot log in to Document Security, the document may or may not be saved. This situation depends on how your Administrator has configured the Auto-apply policy. Check with the Administrator about how documents are handled in this situation.
+>If you cannot log in to Document Security, the document may or may not be saved. This situation depends on how your Administrator has configured the Auto-applied policy. Check with the Administrator about how documents are handled in this situation.
 
 ### Synchronizing for offline access {#synchronizing-for-offline-access}
 
