@@ -1,5 +1,5 @@
 ---
-title: Installing and Configuring AEM Document Security Extension for Microsoft Office
+title: Install and Configure AEM Document Security Extension for Microsoft Office
 description: This document guides you through installing and configuring Adobe Experience Manager Document Security Extension 6.2 for Microsoft Office.
 uuid: 9d7eb6bb-4780-4d82-8657-7c6c6d523af0
 content-type: reference
@@ -7,7 +7,7 @@ topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 ---
-# Installing and Configuring AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
+# Install and configure AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 This document guides you through installing and configuring the Adobe Experience Manager Document Security Extension for Microsoft Office.
 
@@ -50,7 +50,7 @@ Ensure the following minimum configurations on which you want to install Documen
 
 * 32-bit or 64-bit versions of Microsoft Office 2019 Professional Plus on Microsoft Windows 11 in English, French, German, Japanese, Italian, Spanish, Brazilian Portuguese, Korean, Simplified Chinese, or Traditional Chinese.
 
-* 32-bit or 64-bit versions of Microsoft Windows 10 in English, French, German, Japanese, Italian, Spanish, Brazilian Portuguese, Korean, Simplified Chinese, or Traditional Chinese.
+* 32-bit or 64-bit versions of Microsoft Windows 10 in English, French, German, Japanese, Italian, Spanish, Brazilian, Portuguese, Korean, Simplified Chinese, or Traditional Chinese.
   
   **Note:** *Document security extension for Microsoft Office is also expected to work on Microsoft Surface devices.*
 
@@ -66,7 +66,7 @@ Ensure the following minimum configurations on which you want to install Documen
 
 To use Document Security Extension, ensure that you are able to connect to Adobe LiveCycle Rights Management ES2 and later or Document Security add-on for AEM 6.0 forms or later.
 
-## Installing Document Security Extension for Microsoft Office {#installing-document-security-extension-for-microsoft-office}
+## Install Document Security Extension for Microsoft Office {#installing-document-security-extension-for-microsoft-office}
 
 You can download the installer from the [download page](download-installer.md). You cannot customize the installer executable file directly, but it can be installed interactively or in silent mode. To install the software, log in to Windows as an administrator.
 
@@ -92,7 +92,7 @@ The installer is also available as an MSI file, which can be used for customizat
 
    `msiexec /I DocumentSecurityExtensionforMicrosoftOffice.msi /qn`
 
-## Preconfiguring the installer to connect to Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
+## Preconfigure the installer to connect to Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
 
 You can preconfigure the Document Security Extension for the Microsoft Office installer to point to a LiveCycle or AEM server. Doing so ensures that users who install Document Security Extension for Microsoft Office can use the features without configuring a connection. As such, users can open protected documents with no configuration necessary. However, they cannot protect new documents until they configure the client to use a particular server.
 
@@ -167,7 +167,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
    >
    >A common practice is to use the same filename as the original MSI file (for example, `DocumentSecurityExtensionforMicrosoftOffice.msi`).
 
-## Configuring automatic application of a default policy {#configuring-automatic-application-of-a-default-policy}
+## Configure automatic application of a default policy {#configuring-automatic-application-of-a-default-policy}
 
 As part of the configuration, you can configure automatic application of a default policy so that the Document Security Extension for Microsoft Office protects every document that is saved.
 
@@ -176,13 +176,13 @@ You can specify one of the following options:
 * Protect all documents with a default policy.
 * Let users optionally save a file in an unprotected format when they cannot connect to the server. This flexibility allows you to account for cases when users are creating documents while disconnected from the network (for example, while on an airplane).
 
-After you enable the auto-apply policy feature, the document is protected with the default policy in the following cases:
+After you enable the auto-applied policy feature, the document is protected with the default policy in the following cases:
 
 * A user edits and saves a newly created document
 * A user edits and saves an unprotected document
 * The user opens an application that opens with a default document, edits, and then saves the document
 
-### Configure the auto-apply policy feature in the MSI file {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### Configure the auto-applied policy feature in the MSI file {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 Before you begin, preconfigure the installer to point to your LiveCycle or AEM Forms Server, as described earlier in this article.
 
@@ -203,12 +203,12 @@ Before you begin, preconfigure the installer to point to your LiveCycle or AEM F
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>Enable or disable the Auto-apply policy feature.</p> <p><code>1</code>: Enable</p> <p>0: Disable</p> </td>
+   <td><p>Enable or disable the Auto-applied policy feature.</p> <p><code>1</code>: Enable</p> <p>0: Disable</p> </td>
    <td><p>0</p> </td>
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>The policy is GUID to use when new documents are saved. This value applies to the Auto-apply policy feature.</p> </td>
+   <td><p>The policy is GUID to use when new documents are saved. This value applies to the Auto-applied policy feature.</p> </td>
    <td><p>Hexadecimal policy ID as visible on the RM server</p> </td>
   </tr>
   <tr>
@@ -239,16 +239,16 @@ Before you begin, preconfigure the installer to point to your LiveCycle or AEM F
    >
    >A common practice is to use the same filename as the original MSI file (for example, `DocumentSecurityExtensionforMicrosoftOffice.msi`).
 
-## Enabling automatic protection of new documents {#enabling-automatic-protection-of-new-documents}
+## Enable automatic protection of new documents {#enabling-automatic-protection-of-new-documents}
 
-The administrator can enable the ability to protect any document automatically that a user saves. The Administrator configures the Auto-apply policy feature in the installation program for Document Security Extension for Microsoft Office.
+The administrator can enable the ability to protect any document automatically that a user saves. The Administrator configures the Auto-applied policy feature in the installation program for Document Security Extension for Microsoft Office.
 
-If the Auto-apply policy is enabled, all documents that the user saves are protected with the default policy. This action applies in these situations:
+If the Auto-applied policy is enabled, all documents that the user saves are protected with the default policy. This action applies in these situations:
 
 * When a user creates a new document, edits, and saves it.
 * When a user opens an unprotected document, edits, and saves it.
 
-For information about configuring the Auto-apply policy, see [Configure an automatic application of the default policy](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
+For information about configuring the Auto-applied policy, see [Configure an automatic application of the default policy](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
 
 ## Enable ribbon-less user interface {#enable-ribbon-less-user-interface}
 

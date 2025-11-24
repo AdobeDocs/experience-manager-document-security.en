@@ -44,7 +44,7 @@ When a user attempts to open a policy-protected file, the Document Security Exte
 * For the validity period that is specified in the policy.
 * Until an administrator or the person who applied the policy either revokes the access to the file or changes the policy.
 
-  If the person who applied the policy changes the policy or revokes access to the file, the user's permissions for the file are changed or removed even though the user already has the file. If the file itself was revoked, a URL may be provided to the user to get an updated copy.
+  If the person who applied the policy changes the policy or revokes access to the file, the user's permissions for the file are changed or removed even though the user already has the file. If the file itself is revoked, a URL may be provided to the user to get an updated copy.
 
   If the policy allows offline access, users can open policy-protected files without an Internet or network connection during the specified offline lease period. When the offline lease period ends, the user must go online and synchronize with Document Security, which starts a new lease period.
 
