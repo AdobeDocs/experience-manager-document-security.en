@@ -6,7 +6,7 @@ type: Documentation
 feature-set: Experience Manager Forms
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-document-security.en
-index: yes
+index: true
 recommendations: noDisplay
 ---
 
