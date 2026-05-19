@@ -6,6 +6,7 @@ product_v2:
     internal-label: "Experience Manager"
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
     internal-label: "Experience Manager Forms"
+usetq: true
 product: adobe experience manager
 type: Documentation
 feature-set: Experience Manager Forms
