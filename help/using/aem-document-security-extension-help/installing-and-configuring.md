@@ -4,6 +4,11 @@ description: Installing and configuring AEM Document Security
 uuid: 799702ab-019b-4d5f-bdb5-71df3ec88b8b
 contentOwner: dhv
 discoiquuid: 3a13781d-02c4-404b-893a-6cd094a0295b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
 ---
 
 # Installing and configuring {#installing-and-configuring}
