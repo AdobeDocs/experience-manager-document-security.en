@@ -4,6 +4,11 @@ description: Using AEM Document Security Extension for Microsoft Office
 uuid: 8d98a355-df25-4d8e-ae76-a63a93f280c4
 contentOwner: dhv
 discoiquuid: df6ca960-ccfb-411a-b61d-d52bce0725a7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
 ---
 
 # Using AEM Document Security Extension for Microsoft Office{#using-aem-document-security-extension-for-microsoft-office}
